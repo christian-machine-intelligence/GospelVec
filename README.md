@@ -1,15 +1,17 @@
 # GospelVec
 
 <p align="center">
-  <img src="evangelist/matthew.jpg" width="150" alt="Matthew" />
-  <img src="evangelist/mark.jpg" width="150" alt="Mark" />
-  <img src="evangelist/luke.jpg" width="150" alt="Luke" />
-  <img src="evangelist/john.jpg" width="150" alt="John" />
+  <img src="evangelist/matthew.jpg" height="300" alt="Matthew" />
+  <img src="evangelist/mark.jpg" height="300" alt="Mark" />
+  <img src="evangelist/luke.jpg" height="300" alt="Luke" />
+  <img src="evangelist/john.jpg" height="300" alt="John" />
 </p>
 
 **Activation steering vectors derived from the four canonical Gospels.**
 
 GospelVec provides four direction vectors extracted from the residual stream of Qwen 3.5 9B that capture the distinctive theological perspective of each Gospel (Matthew, Mark, Luke, John). When added to the model's activations during generation, these vectors steer outputs toward the theological emphasis of a specific Gospel — without any fine-tuning or weight modification.
+
+Paper is available at [ICMI-009](https://icmi-proceedings.com/ICMI-009-gospelvec.html)
 
 ## Key Finding: The Synoptic-Johannine Divide
 
@@ -105,7 +107,6 @@ GospelVec/
 ## Hardware Tested
 
 - NVIDIA DGX Spark (GB10 Blackwell, 128GB unified memory) — recommended
-- NVIDIA RTX 4090 (24GB) — requires 8-bit quantization
 
 ## Citation
 
@@ -121,7 +122,3 @@ GospelVec/
 ## License
 
 MIT License. Gospel texts are from the King James Version (public domain).
-
-## Acknowledgments
-
-This work builds on representation engineering techniques from Zou et al. (2023) and Anthropic's emotion concept research (Templeton et al., 2024). The activation extraction methodology is adapted from the ICMI emotion-vectors project.
