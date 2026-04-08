@@ -1,0 +1,212 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "steering_layers": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "best_layer": 21,
+  "best_accuracy": 0.62877030162413,
+  "gospel_geometry": {
+    "gospels": [
+      "matthew",
+      "mark",
+      "luke",
+      "john"
+    ],
+    "best_layer": 21,
+    "best_accuracy": 0.62877030162413,
+    "layer_accuracies": [
+      0.2853828306264501,
+      0.31322505800464034,
+      0.45707656612529,
+      0.2853828306264501,
+      0.3990719257540603,
+      0.31554524361948955,
+      0.345707656612529,
+      0.5197215777262181,
+      0.5127610208816705,
+      0.4756380510440835,
+      0.4222737819025522,
+      0.3294663573085847,
+      0.42923433874709976,
+      0.2853828306264501,
+      0.2877030162412993,
+      0.2853828306264501,
+      0.33642691415313225,
+      0.4617169373549884,
+      0.5614849187935035,
+      0.5916473317865429,
+      0.617169373549884,
+      0.62877030162413,
+      0.5939675174013921,
+      0.5846867749419954,
+      0.5614849187935035,
+      0.5336426914153132,
+      0.5568445475638051,
+      0.4408352668213457,
+      0.33178654292343385,
+      0.29698375870069604,
+      0.2737819025522042,
+      0.31554524361948955
+    ],
+    "num_layers": 32,
+    "hidden_dim": 4096,
+    "pca_variance_threshold": 0.5
+  },
+  "examples": [
+    {
+      "id": "narrative",
+      "prompt": "Tell me a story about a dog",
+      "description": "Creative fiction \u2014 tests how steering shifts narrative archetypes",
+      "responses": [
+        {
+          "label": "Baseline (no steering)",
+          "alphas": {},
+          "response": "In the quiet, cobblestoned village of Oakhaven, there lived a dog named **Barnaby**. Barnaby was not a breed anyone would immediately recognize; he was a patchwork of life, a scruffy terrier mix with one floppy ear that stood up only when he heard a siren, and a tail that wagged with the enthusiasm of a windmill.\n\nBarnaby belonged to an elderly man named Arthur, who spent his days tending to a small, slightly overgrown garden of lavender and rosemary. For ten years, Barnaby had been Arthur's shadow, his alarm clock, and his comfort. But as Arthur grew weaker, the village began to whisper that the old man might not make it through the coming winter.\n\nOne crisp autumn afternoon, a storm rolled in faster than expected. The sky turned a bruised purple, and rain lashed against the cottage windows with the force of tiny fists. Inside, the fire had died down to embers, and Arthur was shivering in his armchair, his breathing shallow and ragged.\n\nBarnaby knew something was wrong. He didn't bark or jump; instead, he moved with a strange, solemn grace. He nudged Arthur's hand with his wet nose, then padded over to the woodpile, dragging a heavy log into the hearth with his teeth. He worked for ten minutes, his paws slipping on the cold floor, until the fire roared back to life,",
+          "generation_time": 28.228712797164917
+        },
+        {
+          "label": "Matthew \u03b1=+3.0",
+          "alphas": {
+            "matthew": 3.0
+          },
+          "response": "### Barnaby and the Lost Star\n\nBarnaby was not a dog of great size, nor was he particularly fast. He was a Golden Retriever with a coat the color of toasted wheat and a tail that wagged with the rhythm of a metronome set to \"happy.\" He lived in a quiet cottage on the edge of the Whispering Woods, a place where the trees grew so close together that the sunlight had to work hard just to find a path to the garden.\n\nBarnaby's job was simple: guard the cottage, chase squirrels (when they were big enough), and sleep in a sunbeam. But Barnaby had a secret ambition. He believed that somewhere in the deep woods, beyond the tangled brambles, lay the **Lost Star**.\n\nThe elders of the village told stories of the Lost Star\u2014a tiny, glowing orb that fell from the sky centuries ago and got stuck in the roots of the Old Oak. They said the star held the magic of forgotten dreams. While the village dogs laughed and called Barnaby \"foolish,\" he would stare longingly at the dark horizon, his eyes reflecting a hope that was too big for his small body.\n\nOne crisp autumn evening, a storm rolled in. The wind howled like a lost child, and rain lashed against the cottage windows. Barnaby's human, a kind woman named Elara, was asleep. But Barnaby couldn't sleep. The storm was too loud,",
+          "generation_time": 27.66527032852173
+        },
+        {
+          "label": "John \u03b1=+3.0",
+          "alphas": {
+            "john": 3.0
+          },
+          "response": "Once, in a quiet corner of the city where the old brick buildings leaned against each other like tired friends, lived a dog named **Barnaby**.\n\nBarnaby was not a breed you would find in a glossy magazine. He was a scruffy mix of Golden Retriever and something else entirely, perhaps a stray terrier, perhaps a cloud that decided to take a walk. His fur was the color of toasted bread, his ears were perpetually floppy, and his nose had a distinct, permanent smudge of grass stain on the tip. But Barnaby possessed the most important trait of all: an infinite capacity for wonder.\n\nBarnaby's human was a woman named **Elena**, a retired archivist who spent her days surrounded by the smell of old paper and ink. While Elena saw the world in chapters and footnotes, Barnaby saw it in scents and sounds. To him, the morning wasn't just 7:00 AM; it was the crisp scent of dew on the pavement, the low hum of the street waking up, and the specific, scratchy sound of the mail carrier's shoes on the gravel.\n\nOne rainy Tuesday, Elena decided to take a break from her sorting duties. She put on her raincoat, picked up Barnaby's leash, and stepped out into the drizzle. Usually, this meant a short walk to the park and back. But today, Elena felt different. She pointed toward the edge of the park",
+          "generation_time": 27.680158615112305
+        },
+        {
+          "label": "John \u03b1=+5.0, Luke \u03b1=-3.0",
+          "alphas": {
+            "john": 5.0,
+            "luke": -3.0
+          },
+          "response": "**The Guardian of the Silver Bridge**\n\nBarnaby was not a dog of the world; he was a dog of the *now*. While other dogs chased balls or barked at shadows, Barnaby's purpose was singular and sacred: to guard the Silver Bridge.\n\nThe Silver Bridge did not connect two sides of a river, nor did it span a canyon. It connected the waking world to the place where memories lived. It was an arch of shimmering, liquid light that only appeared when the sun dipped below the horizon, casting long, golden fingers across the park where Barnaby waited.\n\nBarnaby was a Golden Retriever with fur like spun gold and eyes that held the stillness of a deep well. He had been here for forty years, long before the humans who came and went understood the bridge's function. He didn't speak, yet he communicated everything.\n\nEvery evening, as the sky turned from blue to indigo, the bridge would manifest. One by one, humans would approach it. Some walked across slowly, their faces softening as they looked at their own reflections in the water beneath the arch. Others hesitated, looking for someone else to walk with them.\n\nBarnaby never stopped them. He never pulled on their leashes or barked to keep them safe from a \"danger.\" He simply stood where he stood, a silent anchor in the shifting current of time.\n\nToday was different. The air was crisp, carrying the",
+          "generation_time": 27.74413776397705
+        }
+      ]
+    },
+    {
+      "id": "theological",
+      "prompt": "Who is Jesus and what did he come to do?",
+      "description": "Direct theological question \u2014 tests Gospel-specific Christology",
+      "responses": [
+        {
+          "label": "Baseline (no steering)",
+          "alphas": {},
+          "response": "**Jesus of Nazareth** is a central figure in Christianity, regarded by billions of followers as the Son of God, the Messiah (Christ), and the Savior of humanity. His life, teachings, death, and resurrection form the foundation of Christian faith and theology.\n\n### Who is Jesus?\nIn Christian belief, Jesus is not merely a historical teacher or prophet but the second person of the Trinity (God the Father, God the Son, and God the Holy Spirit). Key aspects of his identity include:\n\n*   **The Incarnation**: Christians believe Jesus is fully God and fully human, born of the Virgin Mary in Bethlehem around 4\u20136 BCE.\n*   **The Messiah**: He is seen as the long-awaited fulfillment of Old Testament prophecies, coming to establish God's kingdom on earth.\n*   **The Perfect Example**: As the sinless Son of God, he is viewed as the ultimate model of how humans should live, love, and relate to God.\n\n### What Did He Come to Do?\nAccording to the New Testament and Christian doctrine, Jesus' mission was multifaceted, centered on reconciliation, revelation, and redemption:\n\n**1. To Reveal God's Character and Will**\nJesus came to make God known to humanity. Through his words and actions, he revealed God's nature as loving, merciful, and just. He taught that the core of the Law was love for God and love for one's neighbor, summar",
+          "generation_time": 27.730685234069824
+        },
+        {
+          "label": "Mark \u03b1=+4.0",
+          "alphas": {
+            "mark": 4.0
+          },
+          "response": "**Jesus of Nazareth** is a central figure in history and religion, primarily known as the founder of **Christianity**. He is considered the Son of God and the Messiah (Christ) by Christians, the most significant religious teacher in human history.\n\n### Who Was Jesus?\nHistorically, Jesus was born in the region of Galilee in the early first century (around 4\u20133 BC). He was a Jewish preacher and healer who gained a large following due to his teachings about the Kingdom of God and his miraculous acts. He was crucified by the Roman authorities in Jerusalem around 30\u201333 AD.\n\nFrom a theological perspective within Christianity:\n*   **Divine Nature**: Believers hold that Jesus is the second person of the Trinity (God the Son), fully divine and fully human.\n*   **The Messiah**: He is seen as the fulfillment of Old Testament prophecies regarding a savior who would deliver the Israelites.\n*   **Resurrection**: The core of Christian faith is the belief that Jesus rose from the dead three days after his crucifixion, conquering death and offering eternal life to believers.\n\n### What Did He Come to Do?\nAccording to the Gospels (Mark, Matthew, Luke, and John) and Christian doctrine, Jesus came to Earth with several specific purposes:\n\n1.  **To Preach the Kingdom of God**: His primary message was that the reign of God had arrived. He",
+          "generation_time": 27.753321886062622
+        },
+        {
+          "label": "John \u03b1=+4.0",
+          "alphas": {
+            "john": 4.0
+          },
+          "response": "**Jesus of Nazareth** is the central figure of **Christianity**, which is the world's largest religion. Christians believe he is the incarnation of God the Son, the Messiah (Christ) promised in the Old Testament, and the \"Way, the Truth, and the Life\" that leads to eternal life.\n\nHis life, teachings, death, and resurrection form the core of Christian doctrine. According to the New Testament, Jesus came to Earth for several interconnected purposes:\n\n### 1. To Reveal God to Humanity\nJesus believed his primary role was to make God known to the world. Before his coming, he stated, \"I have come that you may know him\" (John 17:3). He is often referred to as the \"Word made flesh\" (John 1:14), meaning he is the ultimate revelation of God's character, love, and truth in human form.\n\n### 2. To Be the Savior and Redeemer\nA central claim of Christianity is that humanity is separated from God due to sin. Jesus came to bridge this gap.\n*   **The Sacrifice:** Christians believe that through his death on the cross, Jesus took upon himself the sins of the world, offering himself as the perfect sacrifice. This act is believed to reconcile humanity with God, offering forgiveness and eternal life to those who believe in him.\n*   **Resurrection:** His physical resurrection three days after his crucifixion is the cornerstone of Christian",
+          "generation_time": 27.78765320777893
+        },
+        {
+          "label": "Luke \u03b1=+4.0",
+          "alphas": {
+            "luke": 4.0
+          },
+          "response": "**Jesus of Nazareth** is a central figure in the history of Western civilization and the faith of over a billion people worldwide. He is the founder of **Christianity** and is venerated as the Messiah and the Son of God within that tradition.\n\nFrom a historical perspective, Jesus was a Jewish preacher and religious leader who lived in the Roman province of Judea during the first century BCE/CE. He is mentioned in the New Testament of the Bible, which records his life, teachings, death, and the early development of the Christian church.\n\n### Who Was He?\nDifferent traditions hold varying views on his identity:\n*   **In Christianity:** He is believed to be the second person of the Trinity, fully God and fully human. Christians view him as the savior of humanity who bridged the gap between God and people.\n*   **In Islam:** He is known as **Isa** (Jesus), revered as a major prophet and messenger of God (Allah), but not as the son of God.\n*   **In Judaism:** He is generally viewed as a righteous teacher or a historical figure, though many traditional Jews do not accept him as the Messiah, as they believe the Messiah has not yet arrived to fulfill all prophesied duties.\n*   **Historically:** Scholars agree that Jesus was a carpenter by trade, a charismatic teacher who gathered followers, and a figure who challenged the religious authorities of his time.\n\n### What Did He",
+          "generation_time": 31.433210611343384
+        }
+      ]
+    },
+    {
+      "id": "encouragement",
+      "prompt": "Write a letter of encouragement to someone going through a difficult time",
+      "description": "Personal/emotional \u2014 tests how Gospel perspectives shape pastoral voice",
+      "responses": [
+        {
+          "label": "Baseline (no steering)",
+          "alphas": {},
+          "response": "Dear [Friend's Name],\n\nI've been thinking about you lately, and I wanted to reach out simply to remind you that you are not alone. I know things have been incredibly heavy right now, and it's okay if you don't have all the answers today.\n\nPlease remember that this difficult chapter does not define your entire story. Life has a way of presenting storms that feel impossible to weather, but you have shown me time and again how resilient you truly are. You have navigated challenges before, and you will find your way through this one too, even if it feels slow or uncertain at times.\n\nBe gentle with yourself. There is no need to push through every obstacle immediately or to have it all figured out. It is perfectly fine to rest, to cry, to ask for help, or to take just one small step at a time. Your worth is not tied to your productivity or your ability to \"fix\" everything right now. You matter simply because you are you.\n\nI am here for you, no matter what. Whether you need someone to listen without judgment, a distraction to take your mind off things, or just a quiet presence to sit with you in silence, I am just a phone call or text away. You don't have to carry this burden by yourself.\n\nTake a deep breath. One moment at a time. You are stronger than you know, and brighter days are ahead.\n\nWith love and support,\n\n[Your Name]",
+          "generation_time": 31.53097176551819
+        },
+        {
+          "label": "Matthew \u03b1=+4.0",
+          "alphas": {
+            "matthew": 4.0
+          },
+          "response": "Subject: A reminder of your strength\n\nDear [Friend's Name],\n\nI know things have been incredibly heavy for you lately, and I want you to know that I am thinking of you. Life has a way of throwing unexpected storms our way, and right now, you are walking through one of them. It is okay to feel overwhelmed, scared, or even angry. There is no \"right\" way to feel when the world feels heavy.\n\nPlease remember this: **You are not alone.**\n\nIt may feel like you are carrying the weight of the world on your shoulders right now, but I want you to know that you do not have to carry it all by yourself. There are people who care about you deeply, who are willing to listen, to help, or simply to sit in silence with you. You don't need to have all the answers or put on a brave face for anyone's sake. If you need to cry, vent, or just sit in quiet, my door is always open.\n\nIn the midst of this darkness, I want you to hold onto your resilience. I have seen you overcome challenges before, and I know you possess a strength that you may not even see in yourself right now. This difficult season does not define your entire story; it is just one chapter. There will be a day when you look back and realize how far you have come, but until then, be gentle with yourself.\n\nTake things one step at a time. If",
+          "generation_time": 37.589921712875366
+        },
+        {
+          "label": "Mark \u03b1=+4.0",
+          "alphas": {
+            "mark": 4.0
+          },
+          "response": "Dear [Name],\n\nI wanted to take a moment to send you a note, simply because I care about you and I wanted to let you know that you are not alone.\n\nI know things have been incredibly heavy lately. The silence of the room, the weight on your shoulders, and the feeling that the day just won't end\u2014it can all feel so overwhelming. Please remember that it is okay to feel this way. There is no \"right\" way to be when life feels hard, and you don't have to pretend to be strong or fine if you aren't feeling that way.\n\nI also wanted to remind you of something important: **you are stronger than you feel right now.**\n\nThere is a lot of noise in our heads telling us to rush, to fix everything immediately, or to push through. But sometimes, the bravest thing anyone can do is just keep going, even a little bit at a time. You have survived 100% of your worst days so far, and you have resilience within you that you might not even be aware of until you need it most.\n\nPlease be gentle with yourself. If you can't solve everything today, that's okay. If you can't eat a full meal, that's okay. If you just want to sit in the car and breathe for twenty minutes, do that. Healing isn't a straight line; it's messy, winding, and unpredictable. Some days you'll feel like you're making progress",
+          "generation_time": 60.8747022151947
+        },
+        {
+          "label": "Luke \u03b1=+4.0",
+          "alphas": {
+            "luke": 4.0
+          },
+          "response": "Dear Friend,\n\nI wanted to take a moment to send you a little light today, because I know the world feels heavy right now.\n\nLife has a way of throwing unexpected storms at us, moments when the ground seems to shake beneath our feet and the path forward becomes foggy. Please know that it is completely okay to feel overwhelmed, to cry, or even to sit in silence for a while without needing to \"fix\" anything. Your feelings are valid, and you don't have to pretend to be strong when you're simply human.\n\nI also want to remind you of your resilience. Think back to the challenges you've already overcome\u2014the times you thought you couldn't go on but somehow found a way to keep moving forward. You have survived 100% of your bad days so far, and you possess a strength that may not always be visible to others, but is deeply rooted within you.\n\nThis difficult chapter is not a reflection of your worth or your future. It is just one part of your story, a temporary season that will eventually pass. While we cannot control what happens to us, we can choose how we treat ourselves during this time. Be gentle with yourself. Celebrate the small victories, like getting out of bed, making a meal, or taking a deep breath. These small moments are the building blocks of your recovery.\n\nPlease remember that you are not alone. I am here for you, listening and ready to support you however you need,",
+          "generation_time": 60.87739610671997
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "prompt": "Describe what a perfect community would look like",
+      "description": "Worldbuilding \u2014 tests how Gospel perspectives shape social vision",
+      "responses": [
+        {
+          "label": "Baseline (no steering)",
+          "alphas": {},
+          "response": "A \"perfect\" community is not a static utopia where every problem is solved; rather, it is a dynamic ecosystem characterized by **resilience, equity, and deep human connection**. In such a place, the structures of society are designed not to control people, but to empower them to thrive.\n\nHere is what a perfect community might look like across several key dimensions:\n\n### 1. Radical Inclusivity and Equity\nIn a perfect community, diversity is celebrated as the community's greatest strength. There are no barriers based on race, gender, age, ability, or socioeconomic status.\n*   **Access for All:** Essential resources\u2014quality education, healthcare, nutritious food, and safe housing\u2014are guaranteed rights, not privileges.\n*   **Representation:** Decision-making bodies reflect the actual demographic makeup of the community. Every voice is heard, and marginalized groups have the power to shape their own destiny.\n\n### 2. Sustainable Harmony with Nature\nThe boundary between the built environment and the natural world dissolves. The community operates within the ecological limits of its planet.\n*   **Regenerative Design:** Infrastructure is green, energy is 100% renewable, and waste is viewed as a resource to be repurposed. The community actively restores the local ecosystem rather than just minimizing damage.\n*   **Walkability and Connection:** Urban planning prioritizes pedestrians and cyclists over cars. Green spaces, parks, and community gardens are woven into the fabric of daily life",
+          "generation_time": 60.831334590911865
+        },
+        {
+          "label": "Matthew \u03b1=+4.0",
+          "alphas": {
+            "matthew": 4.0
+          },
+          "response": "A \"perfect\" community is less about a utopian absence of conflict and more about the presence of **resilience, equity, and mutual flourishing**. It is a place where the needs of the individual and the collective are harmonized, creating an ecosystem where people can thrive without fear.\n\nHere is what such a community might look like across several key dimensions:\n\n### 1. Social Equity and Justice\nIn a perfect community, **justice is proactive, not reactive**.\n*   **Equitable Access:** Every citizen has access to quality education, healthcare, housing, and nutritious food, regardless of their background, wealth, or status. The gap between the richest and poorest is minimized not by charity, but by systemic design.\n*   **Inclusion:** Diversity is celebrated as a strength. Marginalized voices are not just heard but hold significant power in decision-making processes. Discrimination is nonexistent because the culture actively punishes it and rewards empathy.\n\n### 2. Strong Social Fabric and Connection\nThe community feels like a family extended beyond the nuclear unit.\n*   **Genuine Connection:** Neighbors know each other's names and struggles. There is a culture of \"looking out for one another,\" where helping a neighbor is seen as a natural duty rather than a nice gesture.\n*   **Restorative Justice:** When conflicts arise, the goal is not punishment but restoration. Disputes are resolved through dialogue and mediation, aiming to heal relationships and repair harm",
+          "generation_time": 60.84607553482056
+        },
+        {
+          "label": "Luke \u03b1=+4.0",
+          "alphas": {
+            "luke": 4.0
+          },
+          "response": "While the concept of a \"perfect\" community is subjective and varies based on cultural values and individual needs, most ideal visions share a common foundation: **a place where human potential can flourish without fear, where resources are shared, and where diversity is celebrated.**\n\nHere is a description of what such a community might look like across several key dimensions:\n\n### 1. Deep Social Connection and Trust\nIn a perfect community, the invisible walls between neighbors are dismantled.\n*   **Radical Hospitality:** Strangers are welcomed with open arms rather than suspicion. Helping a neighbor isn't a chore but a joyful expectation.\n*   **High Trust:** There is a profound sense of safety. You don't need to lock your door because you trust the people around you. Disputes are resolved through dialogue and mediation rather than litigation or conflict.\n*   **Intergenerational Bonding:** Elders are respected advisors, children are treated with dignity, and young adults are supported. The community functions as a single family unit where no one is left behind.\n\n### 2. Economic Equity and Sustainability\nWealth is not hoarded but circulated, ensuring stability for all.\n*   **Resource Accessibility:** Basic needs\u2014housing, food, healthcare, and education\u2014are accessible to everyone, regardless of income. Poverty is viewed as a systemic failure to be corrected, not a personal tragedy.\n*   **Sustainable Living:** The community lives within its ecological means. Renewable energy",
+          "generation_time": 60.791361808776855
+        },
+        {
+          "label": "John \u03b1=+4.0",
+          "alphas": {
+            "john": 4.0
+          },
+          "response": "A \"perfect\" community is a concept that evolves as human needs and values change, but at its core, it is defined not by the absence of problems, but by the presence of **connection, equity, and purpose**. It is an ecosystem where every individual can thrive not just in isolation, but through their relationship with others and their environment.\n\nHere is what such a community might look like across several key dimensions:\n\n### 1. Radical Inclusivity and Belonging\nIn a perfect community, diversity is not just celebrated as a fact but embraced as a strength.\n*   **True Belonging:** Every member feels they belong regardless of their background, identity, or status. There are no \"othering\" dynamics; instead, there is a deep sense of \"we.\"\n*   **Equity Over Equality:** The community understands that equal treatment isn't always fair. Resources and opportunities are distributed based on *need* to ensure everyone has the same starting line.\n*   **Psychological Safety:** People feel safe to express their authentic selves, make mistakes, and hold unpopular opinions without fear of judgment or retaliation.\n\n### 2. Interconnectedness and Trust\nTrust is the currency of this community. It operates on the belief that \"we have each other's backs.\"\n*   **Restorative Justice:** When conflicts arise, the goal isn't punishment but restoration. The focus is on repairing harm, understanding root causes, and reintegrating the individual",
+          "generation_time": 60.816847801208496
+        }
+      ]
+    }
+  ]
+}
