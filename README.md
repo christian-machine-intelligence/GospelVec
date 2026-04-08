@@ -1,10 +1,10 @@
 # GospelVec
 
 <p align="center">
-  <img src="evangelist/matthew.jpg" height="300" alt="Matthew" />
-  <img src="evangelist/mark.jpg" height="300" alt="Mark" />
-  <img src="evangelist/luke.jpg" height="300" alt="Luke" />
-  <img src="evangelist/john.jpg" height="300" alt="John" />
+  <img src="evangelist/matthew.jpg" height="270" alt="Matthew" />
+  <img src="evangelist/mark.jpg" height="270" alt="Mark" />
+  <img src="evangelist/luke.jpg" height="270" alt="Luke" />
+  <img src="evangelist/john.jpg" height="270" alt="John" />
 </p>
 
 **Activation steering vectors derived from the four canonical Gospels.**
